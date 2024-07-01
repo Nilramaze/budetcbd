@@ -37,7 +37,7 @@ export async function Header() {
             <img
               className={classes.logo}
               alt="BudgetCBD Logo"
-              src="https://raw.githubusercontent.com/Nilramaze/budgetcbd/main/public/budgetcbd.png"
+              src="http://localhost:3000/media/Logo.png"
             />
           </Link>
           <HeaderNav header={header} />
