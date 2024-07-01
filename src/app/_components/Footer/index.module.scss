@@ -2,7 +2,7 @@
 
 .footer {
   padding: calc(var(--base) * 4) 0;
-  background-color: var(--theme-elevation-1000);
+  background-color: var(--color-base-darkgreen);
   color: var(--theme-elevation-0);
 
   @include small-break {
@@ -36,6 +36,7 @@
   opacity: 1;
   transition: opacity 100ms linear;
   visibility: visible;
+  color: --color-base-budget-lm;
 
   > * {
     text-decoration: none;

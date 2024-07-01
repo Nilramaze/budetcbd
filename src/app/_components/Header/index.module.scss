@@ -1,7 +1,19 @@
 @use '../../_css/queries.scss' as *;
 
 .header {
-  padding: var(--base) 0;
+  height: 150px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* horizontal-offset vertical-offset blur-radius color */
+
+
+}
+
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: white; /* Add any background color you want for the sticky header */
+  z-index: 1000; /* Ensure the header stays on top of other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a raised effect */
 }
 
 .wrap {
@@ -17,6 +29,6 @@
 
 :global([data-theme="light"]) {
   .logo {
-    filter: invert(1);
+    filter: invert(0);
   }
 }

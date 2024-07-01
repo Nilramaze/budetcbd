@@ -5,7 +5,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { Header } from '../../../payload/payload-types'
+import type { Header } from '../../../payload/payload-types'
 import { fetchHeader } from '../../_api/fetchGlobals'
 import { Gutter } from '../Gutter'
 import { HeaderNav } from './Nav'
@@ -36,8 +36,8 @@ export async function Header() {
             */}
             <img
               className={classes.logo}
-              alt="Payload Logo"
-              src="https://raw.githubusercontent.com/payloadcms/payload/main/packages/payload/src/admin/assets/images/payload-logo-light.svg"
+              alt="BudgetCBD Logo"
+              src="https://raw.githubusercontent.com/Nilramaze/budgetcbd/main/public/budgetcbd.png"
             />
           </Link>
           <HeaderNav header={header} />
