@@ -31,7 +31,7 @@ export async function Footer() {
             <img
               className={classes.logo}
               alt="BudgetCBD Logo"
-              src="https://budetcbd.payloadcms.app/media/Logo.png"
+              src="https://raw.githubusercontent.com/Nilramaze/budetcbd/main/public/Logo.png"
             />
           </picture>
         </Link>
