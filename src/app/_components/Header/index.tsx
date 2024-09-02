@@ -28,12 +28,14 @@ export async function Header() {
     <>
       <header className={classes.header}>
         <Gutter className={classes.wrap}>
-          <Link href="/">
-            {/* Cannot use the `<picture>` element here with `srcSet`
+         
+         
+{/*         <Link href="/">
+             Cannot use the `<picture>` element here with `srcSet`
               This is because the theme is able to be overridden by the user
               And so `@media (prefers-color-scheme: dark)` will not work
               Instead, we just use CSS to invert the color via `filter: invert(1)` based on `[data-theme="dark"]`
-            */}
+            
             <img
               className={classes.logo}
               alt="BudgetCBD Logo"
@@ -41,6 +43,7 @@ export async function Header() {
 "
             />
           </Link>
+*/}
           <HeaderNav header={header} />
         </Gutter>
       </header>

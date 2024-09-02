@@ -31,7 +31,7 @@
 
 html {
   @extend %body;
-  background: var(--theme-bg);
+  background: var(--color-white);
   -webkit-font-smoothing: antialiased;
   opacity: 0;
 
@@ -64,7 +64,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   display: block;
 }

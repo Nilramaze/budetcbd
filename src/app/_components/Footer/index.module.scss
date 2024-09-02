@@ -2,8 +2,8 @@
 
 .footer {
   padding: calc(var(--base) * 4) 0;
-  background-color: var(--color-base-darkgreen);
-  color: var(--theme-elevation-0);
+  background-color: var(--color-darkgreen);
+  color: var(--color-beige);
 
   @include small-break {
     padding: calc(var(--base) * 2) 0;

@@ -3,12 +3,14 @@
 .nav {
   display: flex;
   gap: calc(var(--base) / 4) var(--base);
-  align-items: center;
+  align-items: space-between;
   flex-wrap: wrap;
   opacity: 1;
   transition: opacity 100ms linear;
   visibility: visible;
-  color: white !important;
+  color: var(--color-beige) !important;
+  width: 100%;
+  justify-content: space-between; 
 
 
 
@@ -20,4 +22,16 @@
 .hide {
   opacity: 0;
   visibility: hidden;
+}
+
+.navIcon{
+  color: var(--color-beige) !important;
+}
+
+.seperator{
+  display: flex;
+  gap: calc(var(--base) / 4) var(--base);
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }

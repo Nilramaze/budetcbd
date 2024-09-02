@@ -24,18 +24,23 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
       ]
         .filter(Boolean)
         .join(' ')}
-    >
+    ><div className={classes.seperator}>
       {navItems.map(({ link }, i) => {
-        return <CMSLink key={i} {...link} appearance="none" />
+        return <CMSLink key={i} {...link} appearance="none" className={classes.navIcon}/>
       })}
-      <CartLink />
-      {user && <Link href="/account">Account</Link>}
+
+      
+      </div>
+
+      <div className={classes.seperator}>   <CartLink />   {user && <Link href="/account">Account</Link>}
       {!user && (
         <React.Fragment>
           <Link href="/login">Login</Link>
           <Link href="/create-account">Create Account</Link>
         </React.Fragment>
       )}
+      </div>
+
     </nav>
   )
 }

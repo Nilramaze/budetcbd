@@ -1,11 +1,14 @@
 @import '../../_css/common';
 
 .card  {
-  border: 1px var(--theme-elevation-200) solid;
+  border: 1px var(--color-darkgreen) solid;
   border-radius: 4px;
   height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: var(--color-beige);
+  
+  color: var(--color-darkgreen) !important;
 }
 
 .content {
@@ -14,6 +17,7 @@
   display: flex;
   flex-direction: column;
   gap: calc(var(--base) / 2);
+  color: var(--color-darkgreen);
 
   @include small-break {
     padding: calc(var(--base) / 2);
@@ -23,6 +27,7 @@
 
 .title {
   margin: 0;
+  color: var(--color-darkgreen);
 }
 
 .titleLink {
