@@ -32,11 +32,11 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
       
       </div>
 
-      <div className={classes.seperator}>   <CartLink />   {user && <Link href="/account">Account</Link>}
+      <div className={classes.seperator}>   <CartLink />   {user && <Link href="/account" className={classes.link}>Account</Link>}
       {!user && (
         <React.Fragment>
-          <Link href="/login">Login</Link>
-          <Link href="/create-account">Create Account</Link>
+          <Link href="/login"  className={classes.link}>Login</Link>
+          <Link href="/create-account" className={classes.link}>Registrieren</Link>
         </React.Fragment>
       )}
       </div>
